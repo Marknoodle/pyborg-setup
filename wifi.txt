@@ -1,0 +1,9 @@
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+  ssid="GenCyber Summer Camp 2021"
+  scan_ssid=1
+  psk="GenCyber Jags 2021!"
+  key_mgmt=WPA-PSK
+}
