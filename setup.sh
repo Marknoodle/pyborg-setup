@@ -4,3 +4,6 @@ sudo apt-get install -y libhdf5-dev libhdf5-serial-dev libatlas-base-dev libjasp
 pip install opencv-python
 ifconfig | grep inet > ifconf.txt
 wget http://old.piborg.org/downloads/thunderborg/Thunderborg3.py.txt && mv Thunderborg3.py.txt ~/Desktop/ThunderBorg.py
+
+echo "static domain_name_servers=8.8.8.8" >> /etc/dhcpcd.conf
+sudo service dhcpcd restart
