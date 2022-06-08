@@ -7,3 +7,5 @@ wget http://old.piborg.org/downloads/thunderborg/Thunderborg3.py.txt && mv Thund
 
 echo "static domain_name_servers=8.8.8.8" >> /etc/dhcpcd.conf
 sudo service dhcpcd restart
+
+mv ./wifi.txt /wpa_supplicant.conf
