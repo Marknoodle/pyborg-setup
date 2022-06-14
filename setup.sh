@@ -9,5 +9,7 @@ cp ~/Pyborg-Setup/Thunderborg3.py.txt ~/Desktop/ThunderBorg.py
 echo "static domain_name_servers=8.8.8.8" >> /etc/dhcpcd.conf
 sudo service dhcpcd restart
 
+duso systemctl enable ssh && sudo systemctl enable vnc
+
 mv ./wifi.txt /wpa_supplicant.conf
 sudo reboot
